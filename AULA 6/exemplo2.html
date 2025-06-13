@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+    <style>
+        h1{
+            color: darkcyan;
+        }
+
+        table{
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        td,th{
+            padding: 6px;
+            
+            border: 1px solid black;
+        }
+
+        th{
+            background-color: yellow;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Aula 08 -Exemplo 2</h1>
+
+    <p>Vamos criar um exemplo de tabelas onde haverá linhas e colunas <br>
+        mescladas. Para isso vamos utilizar os atributos colspan e rowspan.
+    </p>
+    
+    <table>
+
+        <tr>
+            <th colspan="4">Exemplo 2</th>
+    </tr>
+        <tr>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>   
+            <th>Coluna 3</th>
+            <th>Coluna 4</th>
+        </tr>
+
+        <tr>
+            <td>Valor 1</td>
+            <td>Valor 2</td>
+            <td>Valor 3</td>
+            <td>Valor 4</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Valor 1</td>
+            <td>Valor 2</td>
+            <td>Valor 3</td>
+            
+        </tr>
+
+        <tr>
+            <td>Valor 1</td>
+            <td colspan="2">Valor 2</td>
+            <td>Valor 3</td>
+        </tr>
+
+        <tr>
+            <td>Valor 1</td>
+            <td colspan="3">Valor 2</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Valor 1</td>
+            <td>Valor 2</td>
+            <td>Valor 3</td>
+            <td>Valor 4</td>
+        </tr>
+        <tr>
+            <td>Valor 2</td>
+            <td rowspan="2">Valor 3</td>
+            <td>Valor 4</td>
+
+        </tr>
+        <tr>
+            <td>Valor 1</td>
+            <td>Valor 2</td>
+            <td>Valor 4</td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>
