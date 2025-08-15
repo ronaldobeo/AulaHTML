@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 5</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+            background-color: black;
+            color: aliceblue;
+            padding: 30px;
+        }
+
+        .negrito {
+            font-weight: bold;
+        }
+
+        .italico {
+            font-style: italic;
+        }
+
+        .sublinhado {
+            text-decoration: underline;
+        }
+
+        .destaque {
+            background-color: coral;
+        }
+
+        /* Bordas podem ser usadas em todos os elementos */
+
+
+        table,
+        th,
+        td {
+            border: 2px solid cornflowerblue;
+            border-collapse: collapse;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exemplo 5 - CSS</h1>
+
+    <p>
+        Olá, seja <span class="negrito destaque">bem vindo</span> a minha pagina!
+    </p>
+
+    <p class="sublinhado">
+        Abaixo informações pessoais:
+    </p>
+
+    <ul>
+        <li>Nome: <span class="italico">Ronaldo Béo de Almeida</span></li>
+        <li>Cidade: <span class="sublinhado">Mococa</span></li>
+        <li>Cidade: <span class="negrito italico">Mtec em Informatica para Internet</span></li>
+    </ul>
+
+
+    <table>
+
+        <tr>
+            <th>Amigo</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+        </tr>
+
+        <tr>
+            <td class="italico">Maria</td>
+            <td>Mococa</td>
+            <td>SP</td>
+
+        <tr>
+            <td>Luna</td>
+            <td class="negrito">Xique-Xique</td>
+            <td class="destaque">Bahia</td>
+        </tr>
+
+        </tr>
+    </table>
+
+</body>
+
+
+</html>
