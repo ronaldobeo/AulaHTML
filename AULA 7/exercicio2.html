@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+
+    <style>
+        body{
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+
+        .titulo{
+            background-color: blue;
+            color: aliceblue;
+            padding: 18px;
+        }
+
+        .caixa{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+    
+            border-radius: 10px;
+        }
+
+        table,th,tr,td{
+            border: 2px solid red;
+            border-collapse:collapse;
+            padding: 10px 110px 10px 10px ;
+            font-size: 18px;
+           text-align: left;
+        }
+     
+        
+        td{
+            text-align: left;
+        }
+        th{
+            background-color: rgb(0, 0, 169);
+            color: aliceblue;
+        
+        } 
+
+        .destacado{
+            border:ridge;
+        }
+           </style>
+
+
+
+</head>
+
+<body>
+    <h1 class="titulo">Exercício 2: Tabela estilizada com cores e classes</h1>
+
+    <div class="caixa">
+        <h1>1) Monte e estilize a tabela</h1>
+        <p>A tabela a seguir utiliza o cabeçalho destacado, linhas alternadas e células com classe
+            <span>.destaque</span>.
+            Observe as bordas vermelhas e o colapso de bordas, como visto no exemplo5
+        </p>
+
+        <p><b>Estoque de Produtos</b></p>
+        <table>
+            <thead>
+                <th>Produto</th>
+                <th>Categoria</th>
+                <th>Preço</th>
+                <th>Disponibilidade</th>
+            </thead>
+
+            <tbody>
+                <tr class="linered">
+                    <td><span style="font-weight: bold;">Mouse</span></td>
+                    <td>Periféricos</td>
+                    <td>R$ 80,00</td>
+                    <td>Em estoque</td>
+                </tr>
+                <tr class="linegreen">
+                    <td>Teclado</td>
+                    <td>Periféricos</td>
+                    <td class="destacado">R$ 120,00</td>
+                    <td>Fora de estoque</td>
+                </tr>
+
+                <tr><td><span>Monitor</span></td>
+                    <td>Display</td>
+                    <td>R$ 850,00</td>
+                    <td><u>Em reposição</u></td>
+                </tr>
+                <tr>
+                    <td>Headset</td>
+                    <td>Áudio</td>
+                    <td>R$ 210,00</td>
+                    <td>Em estoque</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Tarefas:</p>
+
+        <ul>
+            <li>Adicione duas novas linhas de produtos e aplique <span>.negrito, .italico .sublinhado</span>
+            conforme desejar.
+            </li>
+            <li>Aplique a classe <span>.destaque</span> e observe o efeito</li>
+        </ul>
+    </div>
+</body>
+
+</html>
