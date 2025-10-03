@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .conteudo{
+            display: flex;
+
+            /* flex-direction: row; Altera a forma que irão se comportar em coluna ou linha, e se reverso ou nao Padrão: row */
+            justify-content: space-between;
+            background-color: cornflowerblue;
+            color: aliceblue;
+            font-size: 20px;
+            padding: 20px; 
+        }
+
+        .menu > div{
+            margin-left: 5px;
+        }
+
+        .menu{
+            display: flex;
+        }
+
+        .testes{
+            
+            display: flex;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: blue;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- O flex -->
+    <!-- Sem o flex, o padrão é block, que ficara um em baixo do outro -->
+    <div class="conteudo">
+        <div><img src="logo_etec_fg_1000x274.png" alt="" width="200px"></div>
+        <div class="menu">
+        <div>Mtec</div>
+        <div>Tecnico</div>
+        </div>
+
+    </div>
+
+    <div class="testes">
+        <div>Teste 1</div>
+        <div>Teste 2</div>
+        <div>Teste 3</div>
+        <div>Teste 4</div>
+        <div>Teste 5</div>
+
+    </div>
+
+
+</body>
+
+</html>
+
