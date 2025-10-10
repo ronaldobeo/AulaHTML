@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .topo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bloco {
+            width: 100px;
+            height: 80px;
+            background-color: black;
+        }
+
+
+        .centro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 160px);
+
+        }
+
+        .bola {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 100%;
+
+        }
+
+        .bola:hover {
+            background-color: green;
+        }
+
+        .triangulo {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid rgb(0, 0, 0);
+            border-bottom: 100px solid transparent;
+        }
+
+        .octagono {
+            width: 200px;
+            height: 200px;
+            background-color: royalblue;
+            clip-path: polygon(10%,10%)
+        }
+
+
+        .rodape {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="topo">
+
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+    </div>
+
+
+    <div class="centro">
+
+        <div class="bola">Exercicio 2</div>
+        <div class="triangulo"></div>
+        <div class="octagono"></div>
+
+    </div>
+
+    <div class="rodape">
+
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+
+
+    </div>
+
+</body>
+
+</html>
