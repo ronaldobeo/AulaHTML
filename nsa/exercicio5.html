@@ -1,82 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-
     <style>
-        body{
-            display: flex;
-            background-color: rgb(227, 227, 227);
-            justify-content: center;
-            align-items: center;
-            height: 98vh;
-        }
-        
-        .content{
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-        }
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        height: 100vh;
+        background: #eaeaea !important;
+      }
 
-        label{
-            font-weight: bold;
-        }
-        .int{
-            background-color: black;
-            text-align: center;
-            color: white;
-            display: block;
-            padding: 5px;
-            width: 15px;
-            height: 15px;
-        }
-        .camada1{
-      
-            
-        }
-        .formcamp{
-            gap: 10px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
+      label {
+        font-weight: bold;
+      }
 
-        .cod{
-           height: 20px;
-           width: 24px; 
-        }
+      select {
+        padding: 4px 8px;
+      }
+
+      input {
+        padding: 6px 12px;
+      }
+
+      .content {
+        position: absolute;
+        padding-top: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        min-width: 600px;
+      }
+
+      .coluna {
+        margin: 16px 0px 0px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .col-images {
+        display: flex;
+        justify-content: center;
+        gap: 50%;
+      }
+
+      .colIMG {
+        padding: 12px;
+      }
+
+      .cod {
+        width: 15px;
+      }
+
+      .int {
+        background-color: black;
+        color: white;
+        width: 40px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+
+      .botao {
+        background-color: black;
+        padding: 10px 8px;
+        border-radius: 7.5px;
+        text-align: center;
+        color: white;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .col {
+        display: flex;
+        justify-content: center;
+      }
+
+      .col a {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      .col a:hover {
+        text-decoration: double;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 35px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="content">
-        <img src="nsa.jpg" alt="" >
-        <div class="camada1">
-        <div class="formcamp">
-            <label for="user">Entrar como:</label>
-            <select name="usuario" id="" name="user">
-                <option value="">ALUNO</option>
+      <img src="nsaonline.png" alt="" style="max-width: 30%; height: auto" />
 
+      <form action="">
+        <div class="row">
+          <div class="coluna">
+            <label for="aluno">Entra como:</label>
+            <select name="aluno" id="" style="width: 139px">
+              <option value="">ALUNO</option>
             </select>
+          </div>
+          <div class="coluna">
+            <label for="cod">Cod. Etec:</label>
+            <input type="text" name="cod" class="cod" />
+            <input type="submit" value="?" class="int" />
+          </div>
+        </div>
 
-            <label for="cod">Cod. Etec</label>
-            <input type="text" name="cod" class="cod">
-            <div class="int">?</div>
-        </div>
-        <div class="camada2">
-            <label for="rm">RM:</label>
-            <input type="text" class="RM" name="rm">
+        <div class="row">
+          <div class="coluna">
+            <label for="RM">RM:</label>
+            <input
+              type="text"
+              name="RM"
+              placeholder="Digite seu login"
+              style="
+                max-width: 100px;
+                border-radius: 5px;
+                border: 1px solid rgb(118, 118, 118);
+              "
+            />
+          </div>
+          <div class="coluna">
             <label for="senha">Senha:</label>
-            <input type="text" name="senha">
+            <input
+              type="text"
+              name="senha"
+              placeholder="Digite sua senha"
+              style="
+                max-width: 100px;
+                border-radius: 5px;
+                border: 1px solid rgb(118, 118, 118);
+              "
+            />
+          </div>
+          <div class="coluna">
             <button class="botao">ENTRAR</button>
+          </div>
         </div>
-        <a href="">Solicitar nova senha</a>
-        </div>
-        <p style="background-color: black; color: white;">Sistema NSA - Desde 2008</p>
+
+        <br />
+        <div class="col"><a href="">Solicitar nova senha</a></div>
+      </form>
+
+      <div class="col-images">
+        <img class="colIMG" src="android.png" alt="" width="100px" />
+        <img class="colIMG" src="apple-ios.png" alt="" width="100px" />
+      </div>
+
+      <div
+        style="
+          border-radius: 0px 0px 5px 5px;
+          background-color: black;
+          color: white;
+          width: 100%;
+          text-align: center;
+          padding: 8px 0px;
+        "
+      >
+        © Sistema NSA - Desde 2008
+      </div>
     </div>
-</body>
+  </body>
 </html>
