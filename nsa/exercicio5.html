@@ -106,6 +106,16 @@
         flex-wrap: wrap;
         gap: 35px;
       }
+      .user{
+        width: 139px;
+        color: black;
+        background-color: white;
+      }
+
+      .user:hover {
+        color: white;
+        background-color: black;
+      }
     </style>
   </head>
   <body>
@@ -115,9 +125,14 @@
       <form action="">
         <div class="row">
           <div class="coluna">
-            <label for="aluno">Entra como:</label>
-            <select name="aluno" id="" style="width: 139px">
+            <label for="user">Entrar como:</label>
+            <select name="user" id="user" class="user">
               <option value="">ALUNO</option>
+              <option value="">ETEC</option>
+              <option value="">PROFESSOR</option>
+              <option value="">RESPONSÁVEL</option>
+              <option value="">SUPERVISÃO</option>
+              <option value="">MONITORAMENTO</option>
             </select>
           </div>
           <div class="coluna">
